@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SAMPON KUVIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">SAMPON KUVIA</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Koti</a></li>
+              <li><a href="kuka.html">Kuka</a></li>
+              <li><a href="galleria.html">Galleria</a></li>
+              <li class="active"><a href="yhteydenotto.html">Yhteydenotto</a></li>
+          </div>
+        </div>
+      </nav>
+
+<h3>Ota yhteyttä</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Etunimi</label>
+    <input type="text" id="fname" name="firstname" placeholder="Etunimesi..">
+
+    <label for="lname">Sukunimi</label>
+    <input type="text" id="lname" name="lastname" placeholder="Sukunimesi">
+
+    <label for="country">Miksi otat yhteyttä?</label>
+    <select id="country" name="country">
+      <option value="Palaute">Haluan antaa palautetta.</option>
+      <option value="Kysymys">Haluan kysyä kuvista.</option>
+      <option value="Käyttäminen">Saako kuvia käyttää jonkin?</option>
+    </select>
+
+    <label for="subject">Kerro huolesi</label>
+    <textarea id="subject" name="subject" placeholder="Kirjoita tähän huolesi" style="height:200px"></textarea>
+
+    <input type="submit" value="Lähetä">
+  </form>
+</div>
+
+</body>
+</html>
