@@ -38,3 +38,15 @@ body {
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+  .carousel-inner img {
+    width: auto; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+    max-height: 700px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
